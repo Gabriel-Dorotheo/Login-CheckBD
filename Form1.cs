@@ -22,5 +22,10 @@ namespace WindowsFormsApp2
             F_login f_login = new F_login(this);
             f_login.ShowDialog();
         }
-    }
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }
