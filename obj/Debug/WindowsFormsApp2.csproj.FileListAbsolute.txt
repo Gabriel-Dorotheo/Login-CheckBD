@@ -22,3 +22,27 @@ C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\bin\Debug\EntityFramework.Sql
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\bin\Debug\System.Data.SQLite.xml
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_escola.resources
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\en\WindowsFormsApp2.resources.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\EntityFramework.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\System.Data.SQLite.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\EntityFramework.xml
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\bin\Debug\System.Data.SQLite.xml
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.F_escola.resources
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.F_login.resources
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.F_login.en.resources
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\en\WindowsFormsApp2.resources.dll
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.pdb

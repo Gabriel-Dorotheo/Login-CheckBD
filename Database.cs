@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
+using System.Security.Cryptography.X509Certificates;
+using System.ComponentModel;
 
 namespace WindowsFormsApp2
 {
@@ -100,6 +102,11 @@ namespace WindowsFormsApp2
                 }
                 throw ex;
             }
+
+         
         }
+
+
+
     }
 }
