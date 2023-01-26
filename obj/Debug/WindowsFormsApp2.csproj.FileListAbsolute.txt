@@ -46,3 +46,29 @@ C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\en\Window
 C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Gabriel Dorotheo\source\repos\visualstudio_database\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\WindowsFormsApp2.exe
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\en\WindowsFormsApp2.resources.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\EntityFramework.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\System.Data.SQLite.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\EntityFramework.xml
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\bin\Debug\System.Data.SQLite.xml
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_escola.resources
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_login.resources
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_login.en.resources
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\en\WindowsFormsApp2.resources.dll
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.exe
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_criarconta.resources
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_novocurso.resources

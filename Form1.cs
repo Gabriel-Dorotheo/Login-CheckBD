@@ -27,5 +27,18 @@ namespace WindowsFormsApp2
 		{
 
 		}
+
+		private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			F_criarconta f_criarconta = new F_criarconta();
+			f_criarconta.ShowDialog();
+
+		}
+
+		private void novoCursoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			F_novocurso f_novocurso = new F_novocurso();
+			f_novocurso.ShowDialog();
+		}
 	}
 }
