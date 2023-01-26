@@ -39,30 +39,9 @@ namespace WindowsFormsApp2
 
 			Curso curso= new Curso();
 			curso.nome_curso = textBox1.Text;
-			curso.status_curso = textBox2.Text;
-			curso.area_curso = textBox3.Text;
-
+			curso.area_curso = textBox2.Text;
+			curso.status_curso = textBox3.Text;
 			banco.NovoCurso(curso);
-			
-			
-			
-			
-			
-			
-			
-			string nomecurso = textBox1.Text;
-			if (nomecurso == "")
-			{
-				MessageBox.Show("Preencha todos os campos!");
-				textBox1.Focus();
-				return;
-			}
-			string cursos = "SELECT * FROM tb_curso WHERE nome_curso='"+nomecurso+"'";
-			dt = Database.ConsultaSql(cursos);
-			if(dt.Rows.Count == 1)
-			{
-				MessageBox.Show("Curso já existente.");
-			}
 		}
 	}
 }

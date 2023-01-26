@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2;
 
 namespace WindowsFormsApp2
 {
@@ -30,29 +31,15 @@ namespace WindowsFormsApp2
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string nome = tb_nomeCompleto.Text;
-			string apelido = tb_usename.Text;
-			string password = tb_password.Text;
+			Usuario usuario = new Usuario();
+			usuario.nome_usuario = tb_nomeCompleto.Text;
+			usuario.username_usuario = tb_usename.Text;
+			usuario.senha_usuario = tb_password.Text;
+			usuario.status_usuario = comboBox1.Text;
+			usuario.nivel_usuario = int.Parse(numericUpDown1.Text);
+			banco.NovoUser(usuario);
+			this.Close();
 
-			if (nome == "" || apelido == "" || password == "")
-			{
-				MessageBox.Show("Preencha todos os campos!");
-				tb_nomeCompleto.Focus();
-				return;
-			}
-			string sql = "SELECT * FROM tb_usuarios WHERE username_usuario='" + apelido + "'";
-			dt = Database.ConsultaSql(sql);
-			if (dt.Rows.Count == 1)
-			{
-				MessageBox.Show("Username já existente em nosso banco de dados.");
-				tb_usename.Focus();
-				return;
-			}
-			else
-			{
-				string sqlite = "INSERT INTO tb_usuarios VALUES('" + nome + "','" + apelido + "','" + password + "')";
-
-			}
 		}
 	}
 }

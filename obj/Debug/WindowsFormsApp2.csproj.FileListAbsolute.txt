@@ -72,3 +72,29 @@ C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2
 C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_criarconta.resources
 C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_novocurso.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\en\WindowsFormsApp2.resources.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\EntityFramework.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\System.Data.SQLite.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\EntityFramework.xml
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\bin\Debug\System.Data.SQLite.xml
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_escola.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_novocurso.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_criarconta.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_login.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_login.en.resources
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\en\WindowsFormsApp2.resources.dll
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.pdb

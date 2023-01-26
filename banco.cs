@@ -298,7 +298,7 @@ namespace WindowsFormsApp2
 		public static void NovoCurso(Curso curso)
 		{
 
-			
+			DataTable dt = new DataTable();
 			// Rotina para inserção do novo curso no banco de dados
 			try
 			{
@@ -316,7 +316,7 @@ namespace WindowsFormsApp2
 
 				cmd.ExecuteNonQuery();
 				vcon.Close();
-				MessageBox.Show("Novo usuário adicionado com sucesso");
+				MessageBox.Show("Novo curso adicionado com sucesso");
 
 
 			}

@@ -30,6 +30,7 @@
         {
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lb_nivel = new System.Windows.Forms.Label();
+			this.pb_login = new System.Windows.Forms.PictureBox();
 			this.user = new System.Windows.Forms.Label();
 			this.lb_user = new System.Windows.Forms.Label();
 			this.nivel = new System.Windows.Forms.Label();
@@ -46,11 +47,10 @@
 			this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.pb_login = new System.Windows.Forms.PictureBox();
 			this.novoCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1.SuspendLayout();
-			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -71,11 +71,21 @@
 			// lb_nivel
 			// 
 			this.lb_nivel.AutoSize = true;
-			this.lb_nivel.Location = new System.Drawing.Point(178, 27);
+			this.lb_nivel.Location = new System.Drawing.Point(242, 27);
 			this.lb_nivel.Name = "lb_nivel";
 			this.lb_nivel.Size = new System.Drawing.Size(13, 13);
 			this.lb_nivel.TabIndex = 5;
 			this.lb_nivel.Text = "--";
+			// 
+			// pb_login
+			// 
+			this.pb_login.Image = global::WindowsFormsApp2.Properties.Resources.bvermelha;
+			this.pb_login.Location = new System.Drawing.Point(9, 16);
+			this.pb_login.Name = "pb_login";
+			this.pb_login.Size = new System.Drawing.Size(25, 24);
+			this.pb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pb_login.TabIndex = 1;
+			this.pb_login.TabStop = false;
 			// 
 			// user
 			// 
@@ -98,7 +108,7 @@
 			// nivel
 			// 
 			this.nivel.AutoSize = true;
-			this.nivel.Location = new System.Drawing.Point(136, 27);
+			this.nivel.Location = new System.Drawing.Point(200, 27);
 			this.nivel.Name = "nivel";
 			this.nivel.Size = new System.Drawing.Size(36, 13);
 			this.nivel.TabIndex = 4;
@@ -160,30 +170,30 @@
 			// novoToolStripMenuItem
 			// 
 			this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-			this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.novoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
 			this.novoToolStripMenuItem.Text = "Novo";
 			this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
 			// 
 			// toolStripMenuItem2
 			// 
 			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 6);
 			// 
 			// gerenciamentoToolStripMenuItem
 			// 
 			this.gerenciamentoToolStripMenuItem.Name = "gerenciamentoToolStripMenuItem";
-			this.gerenciamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.gerenciamentoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
 			this.gerenciamentoToolStripMenuItem.Text = "Gerenciamento";
 			// 
 			// toolStripMenuItem3
 			// 
 			this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-			this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
+			this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 6);
 			// 
 			// visualizarToolStripMenuItem
 			// 
 			this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-			this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
 			this.visualizarToolStripMenuItem.Text = "Visualizar";
 			// 
 			// alunosToolStripMenuItem
@@ -200,20 +210,10 @@
 			this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
 			this.cursosToolStripMenuItem.Text = "Cursos";
 			// 
-			// pb_login
-			// 
-			this.pb_login.Image = global::WindowsFormsApp2.Properties.Resources.bvermelha;
-			this.pb_login.Location = new System.Drawing.Point(9, 16);
-			this.pb_login.Name = "pb_login";
-			this.pb_login.Size = new System.Drawing.Size(25, 24);
-			this.pb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pb_login.TabIndex = 1;
-			this.pb_login.TabStop = false;
-			// 
 			// novoCursoToolStripMenuItem
 			// 
 			this.novoCursoToolStripMenuItem.Name = "novoCursoToolStripMenuItem";
-			this.novoCursoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.novoCursoToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
 			this.novoCursoToolStripMenuItem.Text = "Novo curso";
 			this.novoCursoToolStripMenuItem.Click += new System.EventHandler(this.novoCursoToolStripMenuItem_Click);
 			// 
@@ -231,9 +231,9 @@
 			this.Text = "Form1";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pb_login)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pb_login)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
