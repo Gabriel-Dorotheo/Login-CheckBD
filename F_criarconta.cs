@@ -42,6 +42,9 @@ namespace WindowsFormsApp2
 			this.Close();
 		}
 
+		private void tb_usename_TextChanged(object sender, EventArgs e)
+		{
 
+		}
 	}
 }

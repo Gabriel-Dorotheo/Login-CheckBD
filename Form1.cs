@@ -112,8 +112,23 @@ namespace WindowsFormsApp2
 
 		private void gerenciamentoToolStripMenuItem1_Click(object sender, EventArgs e)
 		{
-			F_Professor gerenciar_professor = new F_Professor();
-			gerenciar_professor.ShowDialog();
+			if (Globais.logado)
+			{
+				if (Globais.nivel == 4)
+				{
+					F_Professor gerenciar_professor = new F_Professor();
+					gerenciar_professor.ShowDialog();
+
+				}
+				else
+				{
+					MessageBox.Show("Nível de acesso não permitido!");
+				}
+			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema...");
+			}
 		}
 
 		private void gerenciamentoToolStripMenuItem3_Click(object sender, EventArgs e)

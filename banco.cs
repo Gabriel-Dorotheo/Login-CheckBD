@@ -327,12 +327,168 @@ namespace WindowsFormsApp2
 			{
 
 
-				MessageBox.Show("Erro ao inserir novo usuário .: " + ex.Message);
+				MessageBox.Show("Erro ao inserir novo curso .: " + ex.Message);
 				//throw ex;
 
 			}
 
 		}// Fim do método NovoUser
-	}
+		public static void NovoProfessor(Professor prof)
+		{
+			if (ProfessorExiste(prof) == true)
+			{
+
+				MessageBox.Show("Professor já existe no sistema.");
+				return;
+
+			}
+			// Rotina para inserção do novo usuário no banco de dados
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				// Parâmetros conforme a tabela do banco de dados
+				cmd.CommandText = "INSERT INTO tb_professor (nome_professor) VALUES (@nome)";
+				//cmd.CommandText = "INSERT INTO tb_usuarios  VALUES (null,'maria','maria','1234','A',2)";
+
+
+				cmd.Parameters.AddWithValue("@nome", prof.nome_professor);
+
+
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+				MessageBox.Show("Professor adicionado com sucesso.");
+
+
+			}
+			catch (Exception ex)
+			{
+
+
+				MessageBox.Show("Erro ao inserir novo Professor! " + ex.Message);
+				//throw ex;
+
+			}
+		}// Fim do método NovoProfessor
+
+		public static void RemoverProfessor(string id)
+		{
+
+			SQLiteDataAdapter da = null;
+			//DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "DELETE FROM tb_professor WHERE id_professor='" + id + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro de sintaxe...");
+				throw ex;
+			}
+
+		}
+
+		public static DataTable ObterDadosProfessor(string id)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM tb_professor WHERE id_professor='" + id + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro " + ex.Message);
+				throw ex;
+			}
+
+		}
+		public static DataTable ObterUserIDProfessor()
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT id_professor AS ID,nome_professor AS Nome FROM tb_professor";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+
+		}
+		public static void AtualizarProfessor(Professor professor)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "UPDATE tb_professor SET nome_professor='" + professor.nome_professor +  "' WHERE id_professor=" + professor.id_professor;
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro " + ex.Message);
+				//throw ex;
+			}
+
+		}
+		public static bool ProfessorExiste(Professor professor)
+		{
+			bool resposta;
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+
+			var vcon = ConectarBanco();
+			var cmd = vcon.CreateCommand();
+			cmd.CommandText = "SELECT nome_professor FROM tb_professor WHERE nome_professor='" + professor.nome_professor + "'";
+			da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+			//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+			da.Fill(dt);
+			if (dt.Rows.Count > 0)
+			{
+
+				resposta = true;
+
+			}
+			else
+			{
+
+				resposta = false;
+			}
+			vcon.Close();
+			return resposta;
+		}
 }
+	}
 

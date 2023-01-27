@@ -74,7 +74,7 @@
 			// lb_nivel
 			// 
 			this.lb_nivel.AutoSize = true;
-			this.lb_nivel.Location = new System.Drawing.Point(242, 27);
+			this.lb_nivel.Location = new System.Drawing.Point(261, 27);
 			this.lb_nivel.Name = "lb_nivel";
 			this.lb_nivel.Size = new System.Drawing.Size(13, 13);
 			this.lb_nivel.TabIndex = 5;
@@ -102,7 +102,7 @@
 			// lb_user
 			// 
 			this.lb_user.AutoSize = true;
-			this.lb_user.Location = new System.Drawing.Point(91, 27);
+			this.lb_user.Location = new System.Drawing.Point(101, 27);
 			this.lb_user.Name = "lb_user";
 			this.lb_user.Size = new System.Drawing.Size(13, 13);
 			this.lb_user.TabIndex = 3;
@@ -111,7 +111,7 @@
 			// nivel
 			// 
 			this.nivel.AutoSize = true;
-			this.nivel.Location = new System.Drawing.Point(200, 27);
+			this.nivel.Location = new System.Drawing.Point(219, 27);
 			this.nivel.Name = "nivel";
 			this.nivel.Size = new System.Drawing.Size(36, 13);
 			this.nivel.TabIndex = 4;
@@ -215,7 +215,7 @@
 			// gerenciamentoToolStripMenuItem
 			// 
 			this.gerenciamentoToolStripMenuItem.Name = "gerenciamentoToolStripMenuItem";
-			this.gerenciamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.gerenciamentoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
 			this.gerenciamentoToolStripMenuItem.Text = "Gerenciamento";
 			this.gerenciamentoToolStripMenuItem.Click += new System.EventHandler(this.gerenciamentoToolStripMenuItem_Click);
 			// 
