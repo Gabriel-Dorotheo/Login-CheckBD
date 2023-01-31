@@ -45,6 +45,7 @@ namespace WindowsFormsApp2
 				f_login.lb_user.Text = dt.Rows[0].Field<string>("nome_usuario");
 				f_login.pb_login.Image = Resources.bverde;
 				Globais.logado = true;
+				Globais.nivel = Convert.ToInt32(f_login.lb_nivel.Text);
 				this.Close();
 			}
 

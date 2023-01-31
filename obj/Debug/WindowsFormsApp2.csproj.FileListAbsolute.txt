@@ -98,3 +98,4 @@ C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\en\WindowsFormsA
 C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_GerenciamentoUser.resources

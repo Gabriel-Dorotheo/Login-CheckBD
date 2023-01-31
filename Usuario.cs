@@ -8,7 +8,7 @@ namespace WindowsFormsApp2
 {
 	internal class Usuario
 	{
-		public Int32 id_curso;
+		public Int32 id_usuario;
 		public string nome_usuario;
 		public string username_usuario;
 		public string senha_usuario;

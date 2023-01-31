@@ -30,15 +30,61 @@ namespace WindowsFormsApp2
 
 		private void novoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			F_criarconta f_criarconta = new F_criarconta();
-			f_criarconta.ShowDialog();
+			if (Globais.logado)
+			{
+				if (Globais.nivel >= 2)
+				{
+					F_criarconta f_criarconta = new F_criarconta();
+					f_criarconta.ShowDialog();
+
+				}
+				else
+				{
+					MessageBox.Show("Nível de acesso não permitido!");
+				}
+			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema...");
+			}
 
 		}
 
 		private void novoCursoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			F_novocurso f_novocurso = new F_novocurso();
-			f_novocurso.ShowDialog();
+			if (Globais.logado)
+			{
+				if(Globais.nivel == 4)
+				{
+					F_novocurso f_novocurso = new F_novocurso();
+					f_novocurso.ShowDialog();
+
+				}
+				else
+				{
+					MessageBox.Show("Nível de acesso não permitido!");
+				}
+			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema...");
+			}
+		}
+
+		private void gerenciamentoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			F_GerenciamentoUser gerenciamento = new F_GerenciamentoUser();
+			gerenciamento.ShowDialog();
+		}
+
+		private void logoffToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			if (MessageBox.Show("Tem certeza que deseja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes)
+			{
+				lb_nivel.Text = "--";
+				lb_user.Text = "--";
+				pb_login.Image = Properties.Resources.bvermelha;
+			}
 		}
 	}
 }

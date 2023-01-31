@@ -40,6 +40,9 @@ namespace WindowsFormsApp2
 			banco.NovoUser(usuario);
 			this.Close();
 
+
 		}
+
+
 	}
 }
