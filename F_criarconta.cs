@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2;
+using static System.Windows.Forms.LinkLabel;
 
 namespace WindowsFormsApp2
 {
@@ -39,8 +40,6 @@ namespace WindowsFormsApp2
 			usuario.nivel_usuario = int.Parse(numericUpDown1.Text);
 			banco.NovoUser(usuario);
 			this.Close();
-
-
 		}
 
 

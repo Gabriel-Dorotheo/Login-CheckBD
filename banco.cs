@@ -255,7 +255,7 @@ namespace WindowsFormsApp2
 			{
 				var vcon = ConectarBanco();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "UPDATE tb_usuarios SET nome_usuario='" + user.nome_usuario + "',username_usuario='" + user.username_usuario + "',senha_usuario='" + user.senha_usuario + "',status_usuario='" + user.status_usuario + "',nivel_usuario='" + user.nivel_usuario + "'";
+				cmd.CommandText = "UPDATE tb_usuarios SET nome_usuario='" + user.nome_usuario + "',username_usuario='" + user.username_usuario + "',senha_usuario='" + user.senha_usuario + "',status_usuario='" + user.status_usuario + "',nivel_usuario=" + user.nivel_usuario + " WHERE id_usuario=" + user.id_usuario;
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
 				cmd.ExecuteNonQuery();
@@ -282,7 +282,7 @@ namespace WindowsFormsApp2
 			{
 				var vcon = ConectarBanco();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "DELETE FROM tb_usuarios WHERE id_usuario=" + id;
+				cmd.CommandText = "DELETE FROM tb_usuarios WHERE id_usuario='" + id + "'";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
 				cmd.ExecuteNonQuery();
@@ -291,6 +291,7 @@ namespace WindowsFormsApp2
 			}
 			catch (Exception ex)
 			{
+				MessageBox.Show("Erro de sintaxe...");
 				throw ex;
 			}
 

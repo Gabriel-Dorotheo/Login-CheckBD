@@ -73,18 +73,53 @@ namespace WindowsFormsApp2
 
 		private void gerenciamentoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			F_GerenciamentoUser gerenciamento = new F_GerenciamentoUser();
-			gerenciamento.ShowDialog();
+			if (Globais.logado)
+			{
+				if (Globais.nivel == 4 )
+				{
+					F_GerenciamentoUser gerenciamento = new F_GerenciamentoUser();
+					gerenciamento.ShowDialog();
+
+				}
+				else
+				{
+					MessageBox.Show("Nível de acesso não permitido!");
+				}
+			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema...");
+			}
 		}
 
 		private void logoffToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			if (MessageBox.Show("Tem certeza que deseja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes)
+			if (Globais.logado)
 			{
-				lb_nivel.Text = "--";
-				lb_user.Text = "--";
-				pb_login.Image = Properties.Resources.bvermelha;
+				if (MessageBox.Show("Tem certeza que deseja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes)
+				{
+					lb_nivel.Text = "--";
+					lb_user.Text = "--";
+					pb_login.Image = Properties.Resources.bvermelha;
+				}
+
 			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema...");
+			}
+		}
+
+		private void gerenciamentoToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			F_Professor gerenciar_professor = new F_Professor();
+			gerenciar_professor.ShowDialog();
+		}
+
+		private void gerenciamentoToolStripMenuItem3_Click(object sender, EventArgs e)
+		{
+			F_Aluno gerenciamento_alunos = new F_Aluno();
+			gerenciamento_alunos.ShowDialog();
 		}
 	}
 }

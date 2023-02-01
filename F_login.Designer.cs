@@ -28,66 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_login));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_user = new System.Windows.Forms.TextBox();
-            this.tb_senha = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // tb_user
-            // 
-            resources.ApplyResources(this.tb_user, "tb_user");
-            this.tb_user.Name = "tb_user";
-            // 
-            // tb_senha
-            // 
-            resources.ApplyResources(this.tb_senha, "tb_senha");
-            this.tb_senha.Name = "tb_senha";
-            this.tb_senha.UseSystemPasswordChar = true;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // F_login
-            // 
-            resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.tb_senha);
-            this.Controls.Add(this.tb_user);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "F_login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_login));
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.tb_user = new System.Windows.Forms.TextBox();
+			this.tb_senha = new System.Windows.Forms.TextBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			resources.ApplyResources(this.label1, "label1");
+			this.label1.Name = "label1";
+			// 
+			// label2
+			// 
+			resources.ApplyResources(this.label2, "label2");
+			this.label2.Name = "label2";
+			// 
+			// tb_user
+			// 
+			resources.ApplyResources(this.tb_user, "tb_user");
+			this.tb_user.Name = "tb_user";
+			// 
+			// tb_senha
+			// 
+			resources.ApplyResources(this.tb_senha, "tb_senha");
+			this.tb_senha.Name = "tb_senha";
+			this.tb_senha.UseSystemPasswordChar = true;
+			// 
+			// button1
+			// 
+			resources.ApplyResources(this.button1, "button1");
+			this.button1.Name = "button1";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// button2
+			// 
+			resources.ApplyResources(this.button2, "button2");
+			this.button2.Name = "button2";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// F_login
+			// 
+			resources.ApplyResources(this, "$this");
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.tb_senha);
+			this.Controls.Add(this.tb_user);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "F_login";
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 

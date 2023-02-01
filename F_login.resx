@@ -186,6 +186,9 @@
   <data name="tb_user.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="tb_user.Text" xml:space="preserve">
+    <value>admin</value>
+  </data>
   <data name="&gt;&gt;tb_user.Name" xml:space="preserve">
     <value>tb_user</value>
   </data>
@@ -206,6 +209,9 @@
   </data>
   <data name="tb_senha.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="tb_senha.Text" xml:space="preserve">
+    <value>admin</value>
   </data>
   <data name="&gt;&gt;tb_senha.Name" xml:space="preserve">
     <value>tb_senha</value>

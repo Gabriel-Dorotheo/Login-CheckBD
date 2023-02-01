@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2;
+using static System.Windows.Forms.LinkLabel;
 
 namespace WindowsFormsApp2
 {
@@ -21,8 +22,13 @@ namespace WindowsFormsApp2
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			F_criarconta abrir = new F_criarconta();
-			abrir.ShowDialog();
+			Usuario usuario = new Usuario();
+			usuario.nome_usuario = tb_nomeCompleto.Text;
+			usuario.username_usuario = tb_usename.Text;
+			usuario.senha_usuario = tb_password.Text;
+			usuario.status_usuario = comboBox1.Text;
+			usuario.nivel_usuario = int.Parse(numericUpDown1.Text);
+			banco.NovoUser(usuario);
 		}
 		private void F_GerenciamentoUser_Load(object sender, EventArgs e)
 		{
@@ -59,7 +65,7 @@ namespace WindowsFormsApp2
 
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-
+		
 		}
 
 		private void tb_id_TextChanged(object sender, EventArgs e)
@@ -81,7 +87,8 @@ namespace WindowsFormsApp2
 			user.nivel_usuario = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
 
 			banco.AtualizarUsuario(user);
-			dataGridView1[1, linha].Value = tb_nomeCompleto;
+			dataGridView1[1, linha].Value = tb_nomeCompleto.Text;
+
 
 		}
 
@@ -89,14 +96,15 @@ namespace WindowsFormsApp2
 		{
 			// evento de linha selecionada
 			DataGridView dgv = sender as DataGridView;
-			int qtdLinhas = dgv.SelectedRows.Count;
+			int qtdLinhas = dgv.SelectedRows. Count;
 			//Realize o procedimento caso tenha ao menos uma linha selecionada
 			if (qtdLinhas > 0)
 			{
 				// Quando obtiver os dados do banco de datos precisaremos de algo para guardar com um DataTable
 				DataTable dt = new DataTable();                 //O dado da coluna índice 0 é o Id do usuário
 				string userId = dgv.SelectedRows[0].Cells[0].Value.ToString();
-				dt = banco.ObterDadosPorId(userId); tb_id.Text = dt.Rows[0].Field<Int64>("id_usuario").ToString();
+				dt = banco.ObterDadosPorId(userId); 
+				tb_id.Text = dt.Rows[0].Field<Int64>("id_usuario").ToString();
 				tb_nomeCompleto.Text = dt.Rows[0].Field<string>("nome_usuario").ToString();
 				tb_usename.Text = dt.Rows[0].Field<string>("username_usuario").ToString();
 				tb_password.Text = dt.Rows[0].Field<string>("senha_usuario").ToString();
