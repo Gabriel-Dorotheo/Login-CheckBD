@@ -29,13 +29,14 @@ namespace WindowsFormsApp2
 			usuario.status_usuario = comboBox1.Text;
 			usuario.nivel_usuario = int.Parse(numericUpDown1.Text);
 			banco.NovoUser(usuario);
+		
 		}
 		private void F_GerenciamentoUser_Load(object sender, EventArgs e)
 		{
 			dataGridView1.DataSource = banco.ObterUserID();
 			// Define a largura das colunas do DataGridView usuário
 			dataGridView1.Columns[0].Width = 40;
-			dataGridView1.Columns[1].Width = 180;
+			dataGridView1.Columns[1].Width = 258;
 		}
 
 

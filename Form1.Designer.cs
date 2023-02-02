@@ -30,7 +30,6 @@
         {
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lb_nivel = new System.Windows.Forms.Label();
-			this.pb_login = new System.Windows.Forms.PictureBox();
 			this.user = new System.Windows.Forms.Label();
 			this.lb_user = new System.Windows.Forms.Label();
 			this.nivel = new System.Windows.Forms.Label();
@@ -42,8 +41,6 @@
 			this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gerenciamentoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
 			this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.novoCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
 			this.gerenciamentoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gerenciamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,9 +48,10 @@
 			this.gerenciamentoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.turmasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pb_login = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
 			this.menuStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pb_login)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -79,16 +77,6 @@
 			this.lb_nivel.Size = new System.Drawing.Size(13, 13);
 			this.lb_nivel.TabIndex = 5;
 			this.lb_nivel.Text = "--";
-			// 
-			// pb_login
-			// 
-			this.pb_login.Image = global::WindowsFormsApp2.Properties.Resources.bvermelha;
-			this.pb_login.Location = new System.Drawing.Point(9, 16);
-			this.pb_login.Name = "pb_login";
-			this.pb_login.Size = new System.Drawing.Size(25, 24);
-			this.pb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pb_login.TabIndex = 1;
-			this.pb_login.TabStop = false;
 			// 
 			// user
 			// 
@@ -172,37 +160,24 @@
 			// gerenciamentoToolStripMenuItem3
 			// 
 			this.gerenciamentoToolStripMenuItem3.Name = "gerenciamentoToolStripMenuItem3";
-			this.gerenciamentoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+			this.gerenciamentoToolStripMenuItem3.Size = new System.Drawing.Size(155, 22);
 			this.gerenciamentoToolStripMenuItem3.Text = "Gerenciamento";
 			this.gerenciamentoToolStripMenuItem3.Click += new System.EventHandler(this.gerenciamentoToolStripMenuItem3_Click);
 			// 
 			// cursosToolStripMenuItem
 			// 
 			this.cursosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novoCursoToolStripMenuItem,
-            this.toolStripMenuItem4,
             this.gerenciamentoToolStripMenuItem2});
 			this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
 			this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
 			this.cursosToolStripMenuItem.Text = "Cursos";
-			// 
-			// novoCursoToolStripMenuItem
-			// 
-			this.novoCursoToolStripMenuItem.Name = "novoCursoToolStripMenuItem";
-			this.novoCursoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.novoCursoToolStripMenuItem.Text = "Novo curso";
-			this.novoCursoToolStripMenuItem.Click += new System.EventHandler(this.novoCursoToolStripMenuItem_Click);
-			// 
-			// toolStripMenuItem4
-			// 
-			this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-			this.toolStripMenuItem4.Size = new System.Drawing.Size(177, 6);
 			// 
 			// gerenciamentoToolStripMenuItem2
 			// 
 			this.gerenciamentoToolStripMenuItem2.Name = "gerenciamentoToolStripMenuItem2";
 			this.gerenciamentoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
 			this.gerenciamentoToolStripMenuItem2.Text = "Gerenciamento";
+			this.gerenciamentoToolStripMenuItem2.Click += new System.EventHandler(this.gerenciamentoToolStripMenuItem2_Click);
 			// 
 			// usuáriosToolStripMenuItem
 			// 
@@ -230,7 +205,7 @@
 			// gerenciamentoToolStripMenuItem1
 			// 
 			this.gerenciamentoToolStripMenuItem1.Name = "gerenciamentoToolStripMenuItem1";
-			this.gerenciamentoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.gerenciamentoToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
 			this.gerenciamentoToolStripMenuItem1.Text = "Gerenciamento";
 			this.gerenciamentoToolStripMenuItem1.Click += new System.EventHandler(this.gerenciamentoToolStripMenuItem1_Click);
 			// 
@@ -248,6 +223,16 @@
 			this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
 			this.visualizarToolStripMenuItem.Text = "Visualizar";
 			// 
+			// pb_login
+			// 
+			this.pb_login.Image = global::WindowsFormsApp2.Properties.Resources.bvermelha;
+			this.pb_login.Location = new System.Drawing.Point(9, 16);
+			this.pb_login.Name = "pb_login";
+			this.pb_login.Size = new System.Drawing.Size(25, 24);
+			this.pb_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pb_login.TabIndex = 1;
+			this.pb_login.TabStop = false;
+			// 
 			// F_escola
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,9 +247,9 @@
 			this.Text = "Form1";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pb_login)).EndInit();
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pb_login)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -287,9 +272,7 @@
 		public System.Windows.Forms.PictureBox pb_login;
 		public System.Windows.Forms.Label lb_user;
 		public System.Windows.Forms.Label lb_nivel;
-		private System.Windows.Forms.ToolStripMenuItem novoCursoToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem gerenciamentoToolStripMenuItem3;
-		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
 		private System.Windows.Forms.ToolStripMenuItem gerenciamentoToolStripMenuItem2;
 		private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem gerenciamentoToolStripMenuItem1;

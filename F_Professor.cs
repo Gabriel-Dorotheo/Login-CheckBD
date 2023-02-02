@@ -43,14 +43,11 @@ namespace WindowsFormsApp2
 
 		private void bt_excluir_Click(object sender, EventArgs e)
 		{
+			DialogResult resposta = MessageBox.Show("Confirmar Exclusão ? ", "Excluir Usuário", MessageBoxButtons.YesNo);
+			if (resposta == DialogResult.Yes)
 			{
-				DialogResult resposta = MessageBox.Show("Confirmar Exclusão ? ", "Excluir Usuário", MessageBoxButtons.YesNo);
-				if (resposta == DialogResult.Yes)
-				{
-					banco.RemoverProfessor(tb_id.Text);
-					dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
-				}
-
+				banco.RemoverProfessor(tb_id.Text);
+				dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
 			}
 		}
 
@@ -83,7 +80,7 @@ namespace WindowsFormsApp2
 			dataGridView1.DataSource = banco.ObterUserIDProfessor();
 			// Define a largura das colunas do DataGridView usuário
 			dataGridView1.Columns[0].Width = 40;
-			dataGridView1.Columns[1].Width = 180;
+			dataGridView1.Columns[1].Width = 362;
 		}
 
 		private void button5_Click(object sender, EventArgs e)

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.button5 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.bt_excluir = new System.Windows.Forms.Button();
@@ -123,27 +123,27 @@
 			this.label9.AutoSize = true;
 			this.label9.Location = new System.Drawing.Point(348, 349);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(83, 13);
+			this.label9.Size = new System.Drawing.Size(61, 13);
 			this.label9.TabIndex = 35;
-			this.label9.Text = "4 - Coordenador";
+			this.label9.Text = "4 - Diretoria";
 			// 
 			// label8
 			// 
 			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(253, 349);
+			this.label8.Location = new System.Drawing.Point(238, 349);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(66, 13);
+			this.label8.Size = new System.Drawing.Size(83, 13);
 			this.label8.TabIndex = 34;
-			this.label8.Text = "3 - Professor";
+			this.label8.Text = "3 - Coordenador";
 			// 
 			// label7
 			// 
 			this.label7.AutoSize = true;
 			this.label7.Location = new System.Drawing.Point(149, 349);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(60, 13);
+			this.label7.Size = new System.Drawing.Size(66, 13);
 			this.label7.TabIndex = 33;
-			this.label7.Text = "2 - Inspetor";
+			this.label7.Text = "2 - Professor";
 			// 
 			// label6
 			// 
@@ -256,14 +256,14 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.ColumnHeadersVisible = false;
 			this.dataGridView1.Location = new System.Drawing.Point(455, 17);
@@ -328,6 +328,7 @@
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.lb_nomecompleto);
 			this.Controls.Add(this.label1);
+			this.MaximizeBox = false;
 			this.Name = "F_GerenciamentoUser";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "F_GerenciamentoUser";

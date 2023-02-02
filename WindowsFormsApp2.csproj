@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="banco.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Database.cs" />
@@ -110,6 +111,12 @@
     <Compile Include="F_Professor.Designer.cs">
       <DependentUpon>F_Professor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GerenciamentoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciamentoCurso.Designer.cs">
+      <DependentUpon>GerenciamentoCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globais.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
@@ -139,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_Professor.resx">
       <DependentUpon>F_Professor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciamentoCurso.resx">
+      <DependentUpon>GerenciamentoCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

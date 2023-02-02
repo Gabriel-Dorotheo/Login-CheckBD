@@ -489,6 +489,254 @@ namespace WindowsFormsApp2
 			vcon.Close();
 			return resposta;
 		}
-}
+		public static DataTable ObterUserIDCurso()
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT id_curso AS ID,nome_curso AS Nome FROM tb_curso";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+
+		}
+		public static DataTable ObterDadosCurso(string id)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM tb_curso WHERE id_curso='" + id + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro " + ex.Message);
+				throw ex;
+			}
+
+		}
+		public static void AtualizarCurso(Curso curso)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "UPDATE tb_CURSO SET nome_curso='" + curso.nome_curso + "' WHERE id_curso=" + curso.id_curso;
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro " + ex.Message);
+				//throw ex;
+			}
+
+		}
+		public static void RemoverCurso(string id)
+		{
+
+			SQLiteDataAdapter da = null;
+			//DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "DELETE FROM tb_curso WHERE id_curso='" + id + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro de sintaxe...");
+				throw ex;
+			}
+
+		}
+		public static void NovoAluno(Aluno aluno)
+		{
+			if (AlunoExiste(aluno) == true)
+			{
+
+				MessageBox.Show("Aluno já existe no sistema.");
+				return;
+
+			}
+			// Rotina para inserção do novo usuário no banco de dados
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				// Parâmetros conforme a tabela do banco de dados
+				cmd.CommandText = "INSERT INTO tb_aluno (nome_aluno,telefone_aluno,cpf_aluno,endereco_aluno) VALUES (@nome,@telefone,@cpf,@endereco)";
+				//cmd.CommandText = "INSERT INTO tb_usuarios  VALUES (null,'maria','maria','1234','A',2)";
+
+
+				cmd.Parameters.AddWithValue("@nome", aluno.nome_aluno);
+				cmd.Parameters.AddWithValue("@telefone", aluno.telefone_aluno);
+				cmd.Parameters.AddWithValue("@cpf", aluno.cpf_aluno);
+				cmd.Parameters.AddWithValue("@endereco", aluno.endereco_aluno);
+
+
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+				MessageBox.Show("Aluno adicionado com sucesso.");
+
+
+			}
+			catch (Exception ex)
+			{
+
+
+				MessageBox.Show("Erro ao inserir novo Aluno! " + ex.Message);
+				//throw ex;
+
+			}
+		}// Fim do método NovoProfessor
+		public static bool AlunoExiste(Aluno aluno)
+		{
+			bool resposta;
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+
+			var vcon = ConectarBanco();
+			var cmd = vcon.CreateCommand();
+			cmd.CommandText = "SELECT nome_aluno FROM tb_aluno WHERE cpf_aluno='" + aluno.cpf_aluno + "'";
+			da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+			//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+			da.Fill(dt);
+			if (dt.Rows.Count > 0)
+			{
+
+				resposta = true;
+
+			}
+			else
+			{
+
+				resposta = false;
+			}
+			vcon.Close();
+			return resposta;
+		}
+		public static void RemoverAluno(string id)
+		{
+
+			SQLiteDataAdapter da = null;
+			//DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "DELETE FROM tb_aluno WHERE id_aluno='" + id + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro de sintaxe...");
+				throw ex;
+			}
+
+		}
+		public static DataTable ObterAlunoID()
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT id_aluno AS ID,nome_aluno AS Nome FROM tb_aluno";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+
+		}
+		public static void AtualizarAluno(Aluno aluno)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "UPDATE tb_aluno SET nome_aluno='" + aluno.nome_aluno + "' WHERE id_aluno=" + aluno.id_aluno;
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				cmd.ExecuteNonQuery();
+				vcon.Close();
+
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro " + ex.Message);
+				//throw ex;
+			}
+
+		}
+		public static DataTable ObterDadosPorAluno(string id)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = vcon.CreateCommand();
+				cmd.CommandText = "SELECT * FROM tb_aluno WHERE id_aluno='" + id + "'";
+				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+				da.Fill(dt);
+				vcon.Close();
+				return dt;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Erro " + ex.Message);
+				throw ex;
+			}
+
+		}
 	}
+}
 

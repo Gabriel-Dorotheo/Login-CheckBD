@@ -173,6 +173,7 @@
 			this.Controls.Add(this.tb_nomeProfessor);
 			this.Controls.Add(this.lb_nomecompleto);
 			this.Controls.Add(this.label1);
+			this.MaximizeBox = false;
 			this.Name = "F_Professor";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "F_Professor";

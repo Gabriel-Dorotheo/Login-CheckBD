@@ -32,7 +32,7 @@ namespace WindowsFormsApp2
 		{
 			if (Globais.logado)
 			{
-				if (Globais.nivel >= 2)
+				if (Globais.nivel >= 3)
 				{
 					F_criarconta f_criarconta = new F_criarconta();
 					f_criarconta.ShowDialog();
@@ -54,7 +54,7 @@ namespace WindowsFormsApp2
 		{
 			if (Globais.logado)
 			{
-				if(Globais.nivel == 4)
+				if(Globais.nivel >= 3)
 				{
 					F_novocurso f_novocurso = new F_novocurso();
 					f_novocurso.ShowDialog();
@@ -67,7 +67,7 @@ namespace WindowsFormsApp2
 			}
 			else
 			{
-				MessageBox.Show("É necessário logar no sistema...");
+				MessageBox.Show("É necessário logar no sistema.");
 			}
 		}
 
@@ -75,7 +75,7 @@ namespace WindowsFormsApp2
 		{
 			if (Globais.logado)
 			{
-				if (Globais.nivel == 4 )
+				if (Globais.nivel >= 3 )
 				{
 					F_GerenciamentoUser gerenciamento = new F_GerenciamentoUser();
 					gerenciamento.ShowDialog();
@@ -88,7 +88,7 @@ namespace WindowsFormsApp2
 			}
 			else
 			{
-				MessageBox.Show("É necessário logar no sistema...");
+				MessageBox.Show("É necessário logar no sistema.");
 			}
 		}
 
@@ -106,7 +106,7 @@ namespace WindowsFormsApp2
 			}
 			else
 			{
-				MessageBox.Show("É necessário logar no sistema...");
+				MessageBox.Show("É necessário logar no sistema.");
 			}
 		}
 
@@ -114,7 +114,7 @@ namespace WindowsFormsApp2
 		{
 			if (Globais.logado)
 			{
-				if (Globais.nivel == 4)
+				if (Globais.nivel >= 3)
 				{
 					F_Professor gerenciar_professor = new F_Professor();
 					gerenciar_professor.ShowDialog();
@@ -127,7 +127,7 @@ namespace WindowsFormsApp2
 			}
 			else
 			{
-				MessageBox.Show("É necessário logar no sistema...");
+				MessageBox.Show("É necessário logar no sistema.");
 			}
 		}
 
@@ -135,6 +135,27 @@ namespace WindowsFormsApp2
 		{
 			F_Aluno gerenciamento_alunos = new F_Aluno();
 			gerenciamento_alunos.ShowDialog();
+		}
+
+		private void gerenciamentoToolStripMenuItem2_Click(object sender, EventArgs e)
+		{
+			if (Globais.logado)
+			{
+				if (Globais.nivel >= 3)
+				{
+					GerenciamentoCurso gerenciarCurso = new GerenciamentoCurso();
+					gerenciarCurso.ShowDialog();
+
+				}
+				else
+				{
+					MessageBox.Show("Nível de acesso não permitido!");
+				}
+			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema.");
+			}
 		}
 	}
 }

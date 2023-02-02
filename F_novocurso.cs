@@ -26,9 +26,7 @@ namespace WindowsFormsApp2
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			textBox1.Text = "";
-			textBox2.Text = "";
-			textBox3.Text = "";
+
 		}
 
 		private void button2_Click(object sender, EventArgs e)
@@ -40,8 +38,13 @@ namespace WindowsFormsApp2
 			Curso curso= new Curso();
 			curso.nome_curso = textBox1.Text;
 			curso.area_curso = textBox2.Text;
-			curso.status_curso = textBox3.Text;
+			curso.status_curso = cb_statusCurso.Text;
 			banco.NovoCurso(curso);
+		}
+
+		private void F_novocurso_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

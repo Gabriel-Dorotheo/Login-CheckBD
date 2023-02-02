@@ -36,8 +36,8 @@
 			this.button3 = new System.Windows.Forms.Button();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.cb_statusCurso = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
 			// lb_nomecurso
@@ -52,7 +52,7 @@
 			// lb_areacurso
 			// 
 			this.lb_areacurso.AutoSize = true;
-			this.lb_areacurso.Location = new System.Drawing.Point(12, 100);
+			this.lb_areacurso.Location = new System.Drawing.Point(12, 86);
 			this.lb_areacurso.Name = "lb_areacurso";
 			this.lb_areacurso.Size = new System.Drawing.Size(73, 13);
 			this.lb_areacurso.TabIndex = 1;
@@ -61,7 +61,7 @@
 			// lb_statuscurso
 			// 
 			this.lb_statuscurso.AutoSize = true;
-			this.lb_statuscurso.Location = new System.Drawing.Point(12, 155);
+			this.lb_statuscurso.Location = new System.Drawing.Point(12, 128);
 			this.lb_statuscurso.Name = "lb_statuscurso";
 			this.lb_statuscurso.Size = new System.Drawing.Size(81, 13);
 			this.lb_statuscurso.TabIndex = 2;
@@ -101,25 +101,17 @@
 			// 
 			this.textBox1.Location = new System.Drawing.Point(12, 61);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(340, 20);
+			this.textBox1.Size = new System.Drawing.Size(272, 20);
 			this.textBox1.TabIndex = 7;
 			this.textBox1.Text = "Assistente tecnico";
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(12, 116);
+			this.textBox2.Location = new System.Drawing.Point(12, 102);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(340, 20);
+			this.textBox2.Size = new System.Drawing.Size(272, 20);
 			this.textBox2.TabIndex = 8;
 			this.textBox2.Text = "computacao";
-			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(12, 171);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(340, 20);
-			this.textBox3.TabIndex = 9;
-			this.textBox3.Text = "A";
 			// 
 			// label1
 			// 
@@ -131,13 +123,24 @@
 			this.label1.TabIndex = 10;
 			this.label1.Text = "Novo curso";
 			// 
+			// cb_statusCurso
+			// 
+			this.cb_statusCurso.FormattingEnabled = true;
+			this.cb_statusCurso.Items.AddRange(new object[] {
+            "Ativado",
+            "Desativado"});
+			this.cb_statusCurso.Location = new System.Drawing.Point(12, 144);
+			this.cb_statusCurso.Name = "cb_statusCurso";
+			this.cb_statusCurso.Size = new System.Drawing.Size(269, 21);
+			this.cb_statusCurso.TabIndex = 11;
+			// 
 			// F_novocurso
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(364, 287);
+			this.Controls.Add(this.cb_statusCurso);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox3);
 			this.Controls.Add(this.textBox2);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.button3);
@@ -149,6 +152,7 @@
 			this.Name = "F_novocurso";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form2";
+			this.Load += new System.EventHandler(this.F_novocurso_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -164,7 +168,7 @@
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.ComboBox cb_statusCurso;
 	}
 }
