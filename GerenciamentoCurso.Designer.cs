@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.lb_id = new System.Windows.Forms.Label();
 			this.tb_id = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -67,14 +67,14 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.ColumnHeadersVisible = false;
 			this.dataGridView1.Location = new System.Drawing.Point(447, 84);
@@ -125,6 +125,7 @@
 			// 
 			// cb_statusCurso
 			// 
+			this.cb_statusCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cb_statusCurso.FormattingEnabled = true;
 			this.cb_statusCurso.Items.AddRange(new object[] {
             "Ativado",
@@ -134,7 +135,6 @@
 			this.cb_statusCurso.Size = new System.Drawing.Size(375, 21);
 			this.cb_statusCurso.TabIndex = 61;
 			this.cb_statusCurso.TabStop = false;
-			this.cb_statusCurso.Text = "Ativado";
 			this.cb_statusCurso.SelectedIndexChanged += new System.EventHandler(this.cb_statusCurso_SelectedIndexChanged);
 			// 
 			// bt_limpar
@@ -203,6 +203,7 @@
 			// 
 			// cb_areaCurso
 			// 
+			this.cb_areaCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cb_areaCurso.FormattingEnabled = true;
 			this.cb_areaCurso.Items.AddRange(new object[] {
             "Administração.",

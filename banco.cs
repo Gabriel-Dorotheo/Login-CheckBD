@@ -678,7 +678,7 @@ namespace WindowsFormsApp2
 			{
 				var vcon = ConectarBanco();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT id_aluno AS ID,nome_aluno AS Nome FROM tb_aluno";
+				cmd.CommandText = "SELECT id_aluno AS ID,nome_aluno AS Nome, telefone_aluno FROM tb_aluno";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
 				da.Fill(dt);

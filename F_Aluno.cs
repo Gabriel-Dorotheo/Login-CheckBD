@@ -29,8 +29,10 @@ namespace WindowsFormsApp2
 			novoAluno.nome_aluno = tb_nomeAluno.Text;
 			novoAluno.telefone_aluno = tb_telefone.Text;
 			novoAluno.cpf_aluno = tb_cpf.Text;
-			novoAluno.endereco_aluno = tb_endereco.Text;
-			banco.NovoAluno(novoAluno);
+			novoAluno.endereco_aluno = tb_end.Text;
+			banco.NovoAluno(novoAluno); 
+			dataGridView1.DataSource = banco.ObterAlunoID();
+
 
 		}
 
@@ -39,7 +41,7 @@ namespace WindowsFormsApp2
 			tb_nomeAluno.Text = "";
 			tb_telefone.Text = "";
 			tb_cpf.Text = "";
-			tb_endereco.Text = "";
+			tb_end.Text = "";
 		}
 
 		private void button4_Click(object sender, EventArgs e)
@@ -78,7 +80,7 @@ namespace WindowsFormsApp2
 				tb_nomeAluno.Text = dt.Rows[0].Field<string>("nome_aluno").ToString();
 				tb_telefone.Text = dt.Rows[0].Field<string>("telefone_aluno").ToString();
 				tb_cpf.Text = dt.Rows[0].Field<string>("cpf_aluno").ToString();
-				tb_endereco.Text = dt.Rows[0].Field<string>("endereco_aluno").ToString();
+				tb_end.Text = dt.Rows[0].Field<string>("endereco_aluno").ToString();
 			}
 		}
 
@@ -90,6 +92,7 @@ namespace WindowsFormsApp2
 			Aluno novo = new Aluno();
 			novo.id_aluno = Convert.ToInt32(tb_id.Text);
 			novo.nome_aluno = tb_nomeAluno.Text;
+			novo.endereco_aluno = tb_end.Text;
 
 			banco.AtualizarAluno(novo);
 			dataGridView1[1, linha].Value = tb_nomeAluno.Text;
@@ -100,7 +103,8 @@ namespace WindowsFormsApp2
 			dataGridView1.DataSource = banco.ObterAlunoID();
 			// Define a largura das colunas do DataGridView usuário
 			dataGridView1.Columns[0].Width = 40;
-			dataGridView1.Columns[1].Width = 258;
+			dataGridView1.Columns[1].Width = 150;
+			dataGridView1.Columns[2].Width = 108;
 
 		}
 	}

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.lb_id = new System.Windows.Forms.Label();
 			this.tb_id = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -44,7 +44,7 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.lb_nomecompleto = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.tb_end = new System.Windows.Forms.TextBox();
 			this.tb_endereco = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
@@ -69,14 +69,14 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.ColumnHeadersVisible = false;
 			this.dataGridView1.Location = new System.Drawing.Point(389, 64);
@@ -204,12 +204,12 @@
 			this.label1.Text = "Gerenciamento de Aluno";
 			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
-			// textBox1
+			// tb_end
 			// 
-			this.textBox1.Location = new System.Drawing.Point(29, 202);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(343, 20);
-			this.textBox1.TabIndex = 69;
+			this.tb_end.Location = new System.Drawing.Point(29, 202);
+			this.tb_end.Name = "tb_end";
+			this.tb_end.Size = new System.Drawing.Size(343, 20);
+			this.tb_end.TabIndex = 69;
 			// 
 			// tb_endereco
 			// 
@@ -225,7 +225,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(720, 333);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.tb_end);
 			this.Controls.Add(this.tb_endereco);
 			this.Controls.Add(this.lb_id);
 			this.Controls.Add(this.tb_id);
@@ -270,7 +270,7 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label lb_nomecompleto;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox tb_end;
 		private System.Windows.Forms.Label tb_endereco;
 	}
 }
