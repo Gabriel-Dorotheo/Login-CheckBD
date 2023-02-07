@@ -52,9 +52,11 @@
 			// lb_id
 			// 
 			this.lb_id.AutoSize = true;
+			this.lb_id.BackColor = System.Drawing.Color.Transparent;
+			this.lb_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lb_id.Location = new System.Drawing.Point(296, 240);
 			this.lb_id.Name = "lb_id";
-			this.lb_id.Size = new System.Drawing.Size(18, 13);
+			this.lb_id.Size = new System.Drawing.Size(20, 13);
 			this.lb_id.TabIndex = 67;
 			this.lb_id.Text = "ID";
 			// 
@@ -69,6 +71,7 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
 			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
 			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,7 +81,6 @@
 			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.ColumnHeadersVisible = false;
 			this.dataGridView1.Location = new System.Drawing.Point(389, 64);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
@@ -169,34 +171,42 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(31, 141);
+			this.label4.BackColor = System.Drawing.Color.Transparent;
+			this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(25, 135);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(27, 13);
+			this.label4.Size = new System.Drawing.Size(34, 19);
 			this.label4.TabIndex = 48;
 			this.label4.Text = "CPF";
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(31, 94);
+			this.label3.BackColor = System.Drawing.Color.Transparent;
+			this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(25, 88);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(49, 13);
+			this.label3.Size = new System.Drawing.Size(67, 19);
 			this.label3.TabIndex = 47;
 			this.label3.Text = "Telefone";
 			// 
 			// lb_nomecompleto
 			// 
 			this.lb_nomecompleto.AutoSize = true;
-			this.lb_nomecompleto.Location = new System.Drawing.Point(31, 48);
+			this.lb_nomecompleto.BackColor = System.Drawing.Color.Transparent;
+			this.lb_nomecompleto.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lb_nomecompleto.Location = new System.Drawing.Point(25, 42);
 			this.lb_nomecompleto.Name = "lb_nomecompleto";
-			this.lb_nomecompleto.Size = new System.Drawing.Size(81, 13);
+			this.lb_nomecompleto.Size = new System.Drawing.Size(118, 19);
 			this.lb_nomecompleto.TabIndex = 46;
 			this.lb_nomecompleto.Text = "Nome completo";
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label1.Location = new System.Drawing.Point(28, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(334, 31);
@@ -214,9 +224,11 @@
 			// tb_endereco
 			// 
 			this.tb_endereco.AutoSize = true;
-			this.tb_endereco.Location = new System.Drawing.Point(31, 186);
+			this.tb_endereco.BackColor = System.Drawing.Color.Transparent;
+			this.tb_endereco.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tb_endereco.Location = new System.Drawing.Point(25, 180);
 			this.tb_endereco.Name = "tb_endereco";
-			this.tb_endereco.Size = new System.Drawing.Size(53, 13);
+			this.tb_endereco.Size = new System.Drawing.Size(71, 19);
 			this.tb_endereco.TabIndex = 68;
 			this.tb_endereco.Text = "Endereço";
 			// 
@@ -224,6 +236,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.a8d155aeccfaa3d984e908be3ca2c4bb;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(720, 333);
 			this.Controls.Add(this.tb_end);
 			this.Controls.Add(this.tb_endereco);

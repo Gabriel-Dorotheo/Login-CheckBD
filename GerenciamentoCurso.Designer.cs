@@ -50,6 +50,7 @@
 			// lb_id
 			// 
 			this.lb_id.AutoSize = true;
+			this.lb_id.BackColor = System.Drawing.Color.Transparent;
 			this.lb_id.Location = new System.Drawing.Point(56, 239);
 			this.lb_id.Name = "lb_id";
 			this.lb_id.Size = new System.Drawing.Size(18, 13);
@@ -76,7 +77,6 @@
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.ColumnHeadersVisible = false;
 			this.dataGridView1.Location = new System.Drawing.Point(447, 84);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
@@ -160,6 +160,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.Transparent;
 			this.label2.Location = new System.Drawing.Point(56, 182);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(76, 13);
@@ -176,6 +177,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
+			this.label3.BackColor = System.Drawing.Color.Transparent;
 			this.label3.Location = new System.Drawing.Point(56, 123);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(73, 13);
@@ -185,6 +187,7 @@
 			// lb_nomecompleto
 			// 
 			this.lb_nomecompleto.AutoSize = true;
+			this.lb_nomecompleto.BackColor = System.Drawing.Color.Transparent;
 			this.lb_nomecompleto.Location = new System.Drawing.Point(56, 68);
 			this.lb_nomecompleto.Name = "lb_nomecompleto";
 			this.lb_nomecompleto.Size = new System.Drawing.Size(79, 13);
@@ -194,6 +197,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(221, 26);
 			this.label1.Name = "label1";
@@ -223,6 +227,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.a8d155aeccfaa3d984e908be3ca2c4bb;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(800, 357);
 			this.Controls.Add(this.cb_areaCurso);
 			this.Controls.Add(this.lb_id);

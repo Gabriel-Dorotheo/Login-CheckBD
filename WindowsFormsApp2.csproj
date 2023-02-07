@@ -87,6 +87,12 @@
     <Compile Include="F_GerenciamentoUser.Designer.cs">
       <DependentUpon>F_GerenciamentoUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Manual.Designer.cs">
+      <DependentUpon>F_Manual.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_novocurso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="F_GerenciamentoUser.resx">
       <DependentUpon>F_GerenciamentoUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_Manual.resx">
+      <DependentUpon>F_Manual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_novocurso.resx">
       <DependentUpon>F_novocurso.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +167,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -172,6 +182,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a8d155aeccfaa3d984e908be3ca2c4bb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a8d155aeccfaa3d984e908be3ca2c4bb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastrar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

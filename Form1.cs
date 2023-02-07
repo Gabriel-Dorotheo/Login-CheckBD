@@ -21,6 +21,10 @@ namespace WindowsFormsApp2
         {
             F_login f_login = new F_login(this);
             f_login.ShowDialog();
+			if (Globais.logado)
+			{
+				tb_manual.Visible = false;
+			}
         }
 
 		private void panel1_Paint(object sender, PaintEventArgs e)
@@ -101,6 +105,7 @@ namespace WindowsFormsApp2
 					lb_nivel.Text = "--";
 					lb_user.Text = "--";
 					pb_login.Image = Properties.Resources.bvermelha;
+					tb_manual.Visible = true;
 				}
 
 			}
@@ -133,8 +138,23 @@ namespace WindowsFormsApp2
 
 		private void gerenciamentoToolStripMenuItem3_Click(object sender, EventArgs e)
 		{
-			F_Aluno gerenciamento_alunos = new F_Aluno();
-			gerenciamento_alunos.ShowDialog();
+			if (Globais.logado)
+			{
+				if (Globais.nivel >= 3)
+				{
+					F_Aluno gerenciamento_alunos = new F_Aluno();
+					gerenciamento_alunos.ShowDialog();
+
+				}
+				else
+				{
+					MessageBox.Show("Nível de acesso não permitido!");
+				}
+			}
+			else
+			{
+				MessageBox.Show("É necessário logar no sistema.");
+			}
 		}
 
 		private void gerenciamentoToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -156,6 +176,17 @@ namespace WindowsFormsApp2
 			{
 				MessageBox.Show("É necessário logar no sistema.");
 			}
+		}
+
+		private void manualDoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void tb_manual_Click(object sender, EventArgs e)
+		{
+			F_Manual manual = new F_Manual();
+			manual.ShowDialog();
 		}
 	}
 }

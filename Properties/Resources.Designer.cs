@@ -63,6 +63,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap a8d155aeccfaa3d984e908be3ca2c4bb {
+            get {
+                object obj = ResourceManager.GetObject("a8d155aeccfaa3d984e908be3ca2c4bb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bamarela {
             get {
                 object obj = ResourceManager.GetObject("bamarela", resourceCulture);
@@ -86,6 +96,46 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap bvermelha {
             get {
                 object obj = ResourceManager.GetObject("bvermelha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cadastrar {
+            get {
+                object obj = ResourceManager.GetObject("cadastrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logon {
+            get {
+                object obj = ResourceManager.GetObject("logon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verde {
+            get {
+                object obj = ResourceManager.GetObject("verde", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

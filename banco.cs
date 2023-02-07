@@ -678,7 +678,7 @@ namespace WindowsFormsApp2
 			{
 				var vcon = ConectarBanco();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "SELECT id_aluno AS ID,nome_aluno AS Nome, telefone_aluno FROM tb_aluno";
+				cmd.CommandText = "SELECT id_aluno AS ID,nome_aluno AS Nome, telefone_aluno AS Telefone FROM tb_aluno";
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
 				da.Fill(dt);
@@ -700,7 +700,7 @@ namespace WindowsFormsApp2
 			{
 				var vcon = ConectarBanco();
 				var cmd = vcon.CreateCommand();
-				cmd.CommandText = "UPDATE tb_aluno SET nome_aluno='" + aluno.nome_aluno + "' WHERE id_aluno=" + aluno.id_aluno;
+				cmd.CommandText = "UPDATE tb_aluno SET nome_aluno='" + aluno.nome_aluno + "', telefone_aluno='" + aluno.telefone_aluno + "', cpf_aluno ='"+ aluno.cpf_aluno + "', endereco_aluno='" + aluno.endereco_aluno + "' WHERE id_aluno=" + aluno.id_aluno;
 				da = new SQLiteDataAdapter(cmd.CommandText, vcon);
 				//o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
 				cmd.ExecuteNonQuery();

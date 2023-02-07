@@ -92,10 +92,15 @@ namespace WindowsFormsApp2
 			Aluno novo = new Aluno();
 			novo.id_aluno = Convert.ToInt32(tb_id.Text);
 			novo.nome_aluno = tb_nomeAluno.Text;
+			novo.telefone_aluno = tb_telefone.Text;
+			novo.cpf_aluno = tb_cpf.Text;
 			novo.endereco_aluno = tb_end.Text;
 
 			banco.AtualizarAluno(novo);
 			dataGridView1[1, linha].Value = tb_nomeAluno.Text;
+			dataGridView1[2, linha].Value = tb_telefone.Text;
+			MessageBox.Show("Dados Atualizados.");
+
 		}
 
 		private void F_Aluno_Load(object sender, EventArgs e)

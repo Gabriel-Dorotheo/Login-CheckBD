@@ -105,3 +105,4 @@ C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2
 C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_GerenciamentoUser.resources
 C:\Users\Gabriel Dorotheo\Desktop\clone\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_Professor.resources
 C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.GerenciamentoCurso.resources
+C:\Users\jesley.gdoliveira\source\repos\Login-CheckBD\obj\Debug\WindowsFormsApp2.F_Manual.resources

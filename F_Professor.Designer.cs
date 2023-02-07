@@ -45,9 +45,11 @@
 			// lb_id
 			// 
 			this.lb_id.AutoSize = true;
-			this.lb_id.Location = new System.Drawing.Point(16, 103);
+			this.lb_id.BackColor = System.Drawing.Color.Transparent;
+			this.lb_id.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lb_id.Location = new System.Drawing.Point(15, 99);
 			this.lb_id.Name = "lb_id";
-			this.lb_id.Size = new System.Drawing.Size(18, 13);
+			this.lb_id.Size = new System.Drawing.Size(23, 19);
 			this.lb_id.TabIndex = 67;
 			this.lb_id.Text = "ID";
 			// 
@@ -64,7 +66,6 @@
 			this.dataGridView1.AllowUserToAddRows = false;
 			this.dataGridView1.AllowUserToResizeRows = false;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.ColumnHeadersVisible = false;
 			this.dataGridView1.Location = new System.Drawing.Point(18, 126);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
@@ -140,9 +141,11 @@
 			// lb_nomecompleto
 			// 
 			this.lb_nomecompleto.AutoSize = true;
-			this.lb_nomecompleto.Location = new System.Drawing.Point(24, 58);
+			this.lb_nomecompleto.BackColor = System.Drawing.Color.Transparent;
+			this.lb_nomecompleto.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lb_nomecompleto.Location = new System.Drawing.Point(15, 52);
 			this.lb_nomecompleto.Name = "lb_nomecompleto";
-			this.lb_nomecompleto.Size = new System.Drawing.Size(81, 13);
+			this.lb_nomecompleto.Size = new System.Drawing.Size(118, 19);
 			this.lb_nomecompleto.TabIndex = 46;
 			this.lb_nomecompleto.Text = "Nome completo";
 			// 
@@ -161,6 +164,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.a8d155aeccfaa3d984e908be3ca2c4bb;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(435, 349);
 			this.Controls.Add(this.lb_id);
 			this.Controls.Add(this.tb_id);

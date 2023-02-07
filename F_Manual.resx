@@ -117,29 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Atualizar
+ O mesmo vale para atualizar os dados de um aluno. Caso o 
+mesmo mude o número de contato ou mude de residencia, 
+basta apenas localizar este aluno, fazer as alterações e clicar
+em atualizar para que sejam salvos os dados.</value>
   </data>
-  <data name="verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bamarela" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bamarela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bvermelha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bvermelha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a8d155aeccfaa3d984e908be3ca2c4bb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a8d155aeccfaa3d984e908be3ca2c4bb1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cadastrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Cada usuário. terá um nível de acesso diferente, variando eles
+do 1 (um) ao 4 (quatro),no qual cada um deles o usuário terá
+um certo tipo de permissão, segue os níveis abaixo.
+
+Nível 1 (Alunos): Visualização de cursos.
+
+Nível 2 (Professores): Visualização de cursos, alunos e turmas.
+
+Nível 3 (Coordenadores): Visualizar, criar ou alterar quaisquer 
+dados que sejam necessários.
+São eles, Usuários, Alunos, Professores, Cursos e Turmas.
+
+Nível 4 (Direção): Acesso total à qualquer função do aplicativo.</value>
   </data>
 </root>

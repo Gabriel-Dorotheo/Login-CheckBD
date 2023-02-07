@@ -25,6 +25,7 @@ namespace WindowsFormsApp2
 			curso.area_curso = cb_areaCurso.Text;
 			curso.status_curso = cb_statusCurso.Text;
 			banco.NovoCurso(curso);
+			dataGridView1.DataSource = banco.ObterUserIDCurso();
 		}
 
 		private void button2_Click(object sender, EventArgs e)

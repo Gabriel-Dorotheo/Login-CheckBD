@@ -28,15 +28,10 @@ namespace WindowsFormsApp2
 			usuario.senha_usuario = tb_password.Text;
 			usuario.status_usuario = comboBox1.Text;
 			usuario.nivel_usuario = (int)numericUpDown1.Value;
-			if(numericUpDown1.Text == null)
-			{
-				MessageBox.Show("Preencha o campo nível de usuário.");
-			}
-			else
-			{
 			banco.NovoUser(usuario);
-			}
-		
+			dataGridView1.DataSource = banco.ObterUserID();
+
+
 		}
 		private void F_GerenciamentoUser_Load(object sender, EventArgs e)
 		{

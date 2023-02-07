@@ -28,6 +28,7 @@ namespace WindowsFormsApp2
 			Professor professor = new Professor();
 			professor.nome_professor = tb_nomeProfessor.Text;
 			banco.NovoProfessor(professor);
+			dataGridView1.DataSource = banco.ObterUserIDProfessor();
 		}
 
 		private void button2_Click(object sender, EventArgs e)
