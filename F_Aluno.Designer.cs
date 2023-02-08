@@ -259,7 +259,7 @@
 			this.MaximizeBox = false;
 			this.Name = "F_Aluno";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "F_Aluno";
+			this.Text = "Gerenciar";
 			this.Load += new System.EventHandler(this.F_Aluno_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);

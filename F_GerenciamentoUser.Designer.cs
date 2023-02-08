@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.button5 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.bt_excluir = new System.Windows.Forms.Button();
@@ -93,7 +93,7 @@
 			this.comboBox1.Items.AddRange(new object[] {
             "Ativado",
             "Desativado"});
-			this.comboBox1.Location = new System.Drawing.Point(61, 260);
+			this.comboBox1.Location = new System.Drawing.Point(61, 258);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(121, 21);
 			this.comboBox1.TabIndex = 38;
@@ -121,36 +121,44 @@
 			// label9
 			// 
 			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(348, 349);
+			this.label9.BackColor = System.Drawing.Color.Transparent;
+			this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.Location = new System.Drawing.Point(369, 350);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(61, 13);
+			this.label9.Size = new System.Drawing.Size(91, 19);
 			this.label9.TabIndex = 35;
 			this.label9.Text = "4 - Diretoria";
 			// 
 			// label8
 			// 
 			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(238, 349);
+			this.label8.BackColor = System.Drawing.Color.Transparent;
+			this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Location = new System.Drawing.Point(242, 350);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(83, 13);
+			this.label8.Size = new System.Drawing.Size(121, 19);
 			this.label8.TabIndex = 34;
 			this.label8.Text = "3 - Coordenador";
 			// 
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(149, 349);
+			this.label7.BackColor = System.Drawing.Color.Transparent;
+			this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.Location = new System.Drawing.Point(141, 350);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(66, 13);
+			this.label7.Size = new System.Drawing.Size(95, 19);
 			this.label7.TabIndex = 33;
 			this.label7.Text = "2 - Professor";
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(58, 349);
+			this.label6.BackColor = System.Drawing.Color.Transparent;
+			this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(65, 350);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(49, 13);
+			this.label6.Size = new System.Drawing.Size(70, 19);
 			this.label6.TabIndex = 32;
 			this.label6.Text = "1 - Aluno";
 			// 
@@ -179,18 +187,22 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(63, 300);
+			this.label5.BackColor = System.Drawing.Color.Transparent;
+			this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(57, 294);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(85, 13);
+			this.label5.Size = new System.Drawing.Size(113, 19);
 			this.label5.TabIndex = 30;
 			this.label5.Text = "Nível de acesso";
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(63, 233);
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(57, 227);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(76, 13);
+			this.label2.Size = new System.Drawing.Size(104, 19);
 			this.label2.TabIndex = 29;
 			this.label2.Text = "Status Usuário";
 			// 
@@ -219,33 +231,40 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(63, 178);
+			this.label4.BackColor = System.Drawing.Color.Transparent;
+			this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(57, 172);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(53, 13);
+			this.label4.Size = new System.Drawing.Size(73, 19);
 			this.label4.TabIndex = 25;
 			this.label4.Text = "Password";
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(63, 123);
+			this.label3.BackColor = System.Drawing.Color.Transparent;
+			this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(57, 117);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(98, 13);
+			this.label3.Size = new System.Drawing.Size(141, 19);
 			this.label3.TabIndex = 24;
 			this.label3.Text = "Username (apelido)";
 			// 
 			// lb_nomecompleto
 			// 
 			this.lb_nomecompleto.AutoSize = true;
-			this.lb_nomecompleto.Location = new System.Drawing.Point(63, 68);
+			this.lb_nomecompleto.BackColor = System.Drawing.Color.Transparent;
+			this.lb_nomecompleto.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lb_nomecompleto.Location = new System.Drawing.Point(57, 62);
 			this.lb_nomecompleto.Name = "lb_nomecompleto";
-			this.lb_nomecompleto.Size = new System.Drawing.Size(81, 13);
+			this.lb_nomecompleto.Size = new System.Drawing.Size(118, 19);
 			this.lb_nomecompleto.TabIndex = 23;
 			this.lb_nomecompleto.Text = "Nome completo";
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(70, 17);
 			this.label1.Name = "label1";
@@ -256,14 +275,15 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.AllowUserToAddRows = false;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(455, 17);
 			this.dataGridView1.Name = "dataGridView1";
@@ -293,9 +313,11 @@
 			// lb_id
 			// 
 			this.lb_id.AutoSize = true;
-			this.lb_id.Location = new System.Drawing.Point(451, 318);
+			this.lb_id.BackColor = System.Drawing.Color.Transparent;
+			this.lb_id.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lb_id.Location = new System.Drawing.Point(451, 317);
 			this.lb_id.Name = "lb_id";
-			this.lb_id.Size = new System.Drawing.Size(18, 13);
+			this.lb_id.Size = new System.Drawing.Size(23, 19);
 			this.lb_id.TabIndex = 44;
 			this.lb_id.Text = "ID";
 			// 
@@ -303,6 +325,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.a8d155aeccfaa3d984e908be3ca2c4bb;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(768, 450);
 			this.Controls.Add(this.lb_id);
 			this.Controls.Add(this.tb_id);
@@ -330,7 +354,7 @@
 			this.MaximizeBox = false;
 			this.Name = "F_GerenciamentoUser";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "F_GerenciamentoUser";
+			this.Text = "Gerenciar";
 			this.Load += new System.EventHandler(this.F_GerenciamentoUser_Load);
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

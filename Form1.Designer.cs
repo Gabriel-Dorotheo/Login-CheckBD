@@ -30,9 +30,9 @@
         {
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lb_nivel = new System.Windows.Forms.Label();
-			this.user = new System.Windows.Forms.Label();
-			this.lb_user = new System.Windows.Forms.Label();
 			this.nivel = new System.Windows.Forms.Label();
+			this.lb_user = new System.Windows.Forms.Label();
+			this.user = new System.Windows.Forms.Label();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.logonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,14 +81,14 @@
 			this.lb_nivel.TabIndex = 5;
 			this.lb_nivel.Text = "--";
 			// 
-			// user
+			// nivel
 			// 
-			this.user.AutoSize = true;
-			this.user.Location = new System.Drawing.Point(52, 23);
-			this.user.Name = "user";
-			this.user.Size = new System.Drawing.Size(46, 13);
-			this.user.TabIndex = 2;
-			this.user.Text = "Usuário:";
+			this.nivel.AutoSize = true;
+			this.nivel.Location = new System.Drawing.Point(222, 23);
+			this.nivel.Name = "nivel";
+			this.nivel.Size = new System.Drawing.Size(36, 13);
+			this.nivel.TabIndex = 4;
+			this.nivel.Text = "Nível:";
 			// 
 			// lb_user
 			// 
@@ -99,14 +99,14 @@
 			this.lb_user.TabIndex = 3;
 			this.lb_user.Text = "--";
 			// 
-			// nivel
+			// user
 			// 
-			this.nivel.AutoSize = true;
-			this.nivel.Location = new System.Drawing.Point(222, 23);
-			this.nivel.Name = "nivel";
-			this.nivel.Size = new System.Drawing.Size(36, 13);
-			this.nivel.TabIndex = 4;
-			this.nivel.Text = "Nível:";
+			this.user.AutoSize = true;
+			this.user.Location = new System.Drawing.Point(52, 23);
+			this.user.Name = "user";
+			this.user.Size = new System.Drawing.Size(46, 13);
+			this.user.TabIndex = 2;
+			this.user.Text = "Usuário:";
 			// 
 			// menuStrip1
 			// 
@@ -223,8 +223,9 @@
 			// visualizarToolStripMenuItem
 			// 
 			this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-			this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+			this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.visualizarToolStripMenuItem.Text = "Visualizar";
+			this.visualizarToolStripMenuItem.Click += new System.EventHandler(this.visualizarToolStripMenuItem_Click);
 			// 
 			// tb_manual
 			// 
@@ -272,7 +273,7 @@
 			this.MaximizeBox = false;
 			this.Name = "F_escola";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Form1";
+			this.Text = "Escola";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.menuStrip1.ResumeLayout(false);

@@ -188,5 +188,11 @@ namespace WindowsFormsApp2
 			F_Manual manual = new F_Manual();
 			manual.ShowDialog();
 		}
+
+		private void visualizarToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			F_Turma turma = new F_Turma();
+			turma.ShowDialog();
+		}
 	}
 }

@@ -77,12 +77,8 @@ namespace WindowsFormsApp2
 			}
 		}
 
-
-	
-
-
-
-		public static void Dml(string sql, string msgOk = null, string msgErro = null) // Data Manipulation Language (INSERT - UPDADE - DELETE)
+		public static void Dml(string sql, string msgOk = null, string msgErro = null)
+		// Data Manipulation Language (INSERT - UPDADE - DELETE)
 		{
 			SQLiteDataAdapter da = null;
 			DataTable dt = new DataTable();
@@ -106,11 +102,9 @@ namespace WindowsFormsApp2
 			}
 
 		}
-
 		// Fim das funções genéricas
 
 		// Função para F_NovoUser Item 9.2 do Material de apoio
-
 		public static void NovoUser(Usuario user)
 		{
 
@@ -153,12 +147,6 @@ namespace WindowsFormsApp2
 			}
 
 		}// Fim do método NovoUser
-
-
-
-
-
-
 		public static bool UsernameExiste(Usuario user)
 		{
 			bool resposta;
@@ -186,8 +174,6 @@ namespace WindowsFormsApp2
 			return resposta;
 
 		} // Fim do método UsernameExiste
-
-
 		// Fim do 9.2
 
 
@@ -214,7 +200,6 @@ namespace WindowsFormsApp2
 			}
 
 		}
-
 		// Fim 10.1
 
 		// Início 10.2
@@ -241,11 +226,9 @@ namespace WindowsFormsApp2
 			}
 
 		}
-
 		// Fim 10.2
 
 		// Início 10.3
-
 		public static void AtualizarUsuario(Usuario user)
 		{
 
@@ -272,7 +255,6 @@ namespace WindowsFormsApp2
 		//Fim 10.3
 
 		// Início 10.4
-
 		public static void RemoverUsuario(string id)
 		{
 
@@ -297,7 +279,6 @@ namespace WindowsFormsApp2
 
 		}
 		//Fim 10.4
-
 		public static void NovoCurso(Curso curso)
 		{
 
@@ -370,7 +351,6 @@ namespace WindowsFormsApp2
 
 			}
 		}// Fim do método NovoProfessor
-
 		public static void RemoverProfessor(string id)
 		{
 
@@ -394,7 +374,6 @@ namespace WindowsFormsApp2
 			}
 
 		}
-
 		public static DataTable ObterDadosProfessor(string id)
 		{
 
@@ -736,6 +715,32 @@ namespace WindowsFormsApp2
 				throw ex;
 			}
 
+		}
+		public static DataTable Dql(string sql)
+		{
+
+			SQLiteDataAdapter da = null;
+			DataTable dt = new DataTable();
+
+			try
+			{
+				var vcon = ConectarBanco();
+				var cmd = ConectarBanco().CreateCommand();
+				{
+					cmd.CommandText = sql;
+					da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+					da.Fill(dt);
+					vcon.Close();
+					return dt;
+				}
+
+
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
 		}
 	}
 }

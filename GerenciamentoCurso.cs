@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using WindowsFormsApp2;
 
 namespace WindowsFormsApp2
 {
@@ -65,10 +66,19 @@ namespace WindowsFormsApp2
 				DataTable dt = new DataTable();                 //O dado da coluna índice 0 é o Id do usuário
 				string userId = dgv.SelectedRows[0].Cells[0].Value.ToString();
 				dt = banco.ObterDadosCurso(userId);
+				//if (dt.Rows.Count > 0) {
+				
 				tb_id.Text = dt.Rows[0].Field<Int64>("id_curso").ToString();
-				tb_nomeCurso.Text = dt.Rows[0].Field<string>("nome_curso").ToString();
-				cb_areaCurso.Text = dt.Rows[0].Field<string>("area_curso").ToString();
-				cb_statusCurso.Text = dt.Rows[0].Field<string>("status_curso").ToString();
+				tb_nomeCurso.Text = dt.Rows[0].Field<string>("nome_curso");
+				cb_areaCurso.Text = dt.Rows[0].Field<string>("area_curso");
+				cb_statusCurso.Text = dt.Rows[0].Field<string>("status_curso");
+				
+				
+				
+				//}
+
+
+
 			}
 		}
 
@@ -101,6 +111,11 @@ namespace WindowsFormsApp2
 				banco.RemoverCurso(tb_id.Text);
 				dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
 			}
+		}
+
+		private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+		{
+
 		}
 	}
 }
